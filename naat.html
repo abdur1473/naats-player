@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naats app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- sidebar -->
+        <div class="body sidebar">
+
+
+            <div class="side-logo">
+                <img src="/img/ChatGPT Image Aug 31, 2026, 03_03_49 PM (1).png" alt="">
+                <div class="logo-text">
+                    <h1>Naats</h1>
+                    <h3>Listen. Reflect. Connect.</h3>
+                </div>
+            </div>
+
+
+            <!-- side-links -->
+            <div class="side-links">
+                <a class="home">
+                    <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
+                    <span>Home</span>
+                </a>
+
+                <a class="side-naat">
+                    <i class="fa-solid fa-music" style="color: rgb(255, 255, 255);"></i>
+                    <span>Naats</span>
+                </a>
+
+                <a class="album">
+                    <i class="fa-solid fa-record-vinyl" style="color: rgb(255, 255, 255);"></i>
+                    <span>Albums</span>
+                </a>
+
+                <a class="artist">
+                    <i class="fa-solid fa-user" style="color: rgb(255, 255, 255);"></i>
+                    <span>Artists</span>
+                </a>
+
+                <a class="favorites">
+                    <i class="fa-solid fa-heart" style="color: rgb(255, 255, 255);"></i>
+                    <span>Favorites</span>
+                </a>
+
+                <a class="download">
+                    <i class="fa-solid fa-download" style="color: rgb(255, 255, 255);"></i>
+                    <span>Download</span>
+                </a>
+
+            </div>
+
+            <div class="side-playlist">
+                <div class="playlist-play">
+                    <h4>PLAYLIST</h4>
+                </div>
+
+                <div class="playlists">
+                    <div id="firstplay" class="ply">
+
+                        <div class="first">
+                            <div class="first-image"><img id="hideplaylist" src="/img/Mahir zain.jfif" alt=""></div>
+                            <div class="first-text">
+                                <h5>MAHIR ZAIN</h5>
+                                <h4>20 NAATS</h4>
+                            </div>
+                        </div>
+
+                        <div class="naats" id="naatlist">
+                            <div class="naat" data-title="ya-nabi" data-Artist="Mahir Zain"
+                                data-audio="./audios/ya-nabi-salam-alayka.mp3" data-image="./img/ya-nabi.jfif">
+                                <img src="./img/ya-nabi.jfif" style="width: 70px; height: 50px;" alt="Naat 2">
+                                <h3>Ya Nabi Salam Alayka</h3>
+                            </div>
+
+                            <div class="naat" data-title="La Tahzan" data-Artist="Mahir Zain"
+                                data-audio="./audios/Maher Zain - La Tahzan ماهر زين - لا تَحزَن.mp3"
+                                data-image="./img/la-tehzan.jfif">
+
+                                <img src="./img/la-tehzan.jfif" style="width: 80px; height: 60px;" alt="La Tahzan">
+                                <h3>La Tahzan</h3>
+                            </div>
+
+                            <div class="naat" data-title="Rahmatun lilAlameen" data-Artist="Mahir Zain"
+                                data-audio="./audios/Maher Zain - Rahmatun LilAlameen (Official Music Video) ماهر زين - رحمة للعالمين.mp3"
+                                data-image="./img/muhammad.jfif">
+                                <img src="./img/muhammad.jfif" style="width: 80px; height: 60px;" alt="La Tahzan">
+                                <h3>Rahmatun lilAlameen</h3>
+                            </div>
+
+                            <div class="naat" data-title="Qalbi Fil Madinah" data-Artist="Mahir Zain"
+                                data-audio="./audios/Maher Zain & Harris J - Qalbi Fil Madinah  Official Music Video  قلبي في المدينة.mp3"
+                                data-image="./img/images.jfif">
+                                <img src="./img/images.jfif" style="width: 80px; height: 60px;" alt="La Tahzan">
+                                <h3>Qalbi Fil Madinah</h3>
+                            </div>
+
+                            <div class="naat" data-title="Assubhu Bada" data-Artist="Mahir Zain"
+                                data-audio="./audios/Maher Zain - Assubhu Bada  ماهر زين - الصبح بدا (Official Music Video).mp3"
+                                data-image="./img/Assubhu.jfif">
+                                <img src="./img/Assubhu.jfif" style="width: 80px; height: 60px;" alt="La Tahzan">
+                                <h3>Assubhu Bada</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="secondplay">
+
+                    </div>
+
+                    <div class="thridplay">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content -->
+        <div class="body main-content">
+
+            <!-- search -->
+            <div class="search">
+                <h1>Naats Player</h1>
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(153, 141, 141);"></i>
+                    <input id="search" type="text" placeholder="search your favorite naats ">
+                </div>
+
+                <div class="profile">
+                    <i class="fa-solid fa-user fa-2xl" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+
+            <!-- played -->
+
+            <div class="played">
+                <img id="mainPoster" src="./img/ChatGPT Image Aug 31, 2026, 02_52_11 PM.png"
+                    style="width: 200px; height: 200px; border-radius: 20px; margin: 10px; " alt="Naat">
+                <div class="player">
+                    <div class="naat-info">
+                        <h1 id="mainTitle"></h1>
+                        <p id="mainArtist"></p>
+                    </div>
+
+                    <div class="progress-area">
+                        <span id="curenttime">0:00</span>
+
+                        <input type="range" id="progress" min="0" max="100" value="0">
+
+                        <span id="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button id="previous"><i class="fa-solid fa-backward-step fa-xl"
+                                style="color: rgb(226, 232, 240);"></i></button>
+
+                        <button id="play" class="play-btn"><i id="playicon" class="fa-solid fa-play fa-2xl"
+                                style="color: rgb(255, 255, 255);"></i></button>
+
+                        <button id="next"><i class="fa-solid fa-forward-step fa-xl"
+                                style="color: rgb(226, 232, 240);"></i></button>
+
+                    </div>
+
+                    <div class="volume-area">
+
+                        <span><i class="fa-solid fa-volume-low fa-lg" style="color: rgb(236, 239, 244);"></i></span>
+
+                        <input type="range" id="volume" min="0" max="100" value="70">
+
+                        <span><i class="fa-solid fa-volume-high" style="color: rgb(236, 239, 244);"></i></span>
+
+                    </div>
+
+                    <audio id="mainAudio">
+                        <source src="">
+                    </audio>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./click.js"></script>
+</body>
+
+</html>
