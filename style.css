@@ -11,7 +11,7 @@ body {
 /* MAIN */
 .main {
   display: grid;
-  grid-template-columns: 350px 920px;
+  grid-template-columns: 3fr 7fr;
   grid-template-rows: 1250px;
 }
 
