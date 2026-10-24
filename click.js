@@ -1,21 +1,7 @@
+// 
+
 const hideplaylist = document.querySelector("#hideplaylist")
 const naatList = document.querySelector("#naatlist")
-
-hideplaylist.addEventListener("click", function () {
-    if(naatList.style.display  === "block"){
-        naatList.style.display = "none"
-    }else{
-        naatList.style.display = "block"
-    }
-
-    
-});
-
-const handle = document.querySelector(".ply")
-
-handle.addEventListener("click", function () {
-    handle.classList.toggle("ply")
-})
 
 const naats = document.querySelectorAll(".naats .naat");
 
@@ -34,6 +20,24 @@ const play = document.querySelector("#play")
 const next = document.querySelector("#next")
 
 const volume = document.querySelector("#volume")
+
+hideplaylist.addEventListener("click", function () {
+    if(naatList.style.display  === "block"){
+        naatList.style.display = "none"
+    }else{
+        naatList.style.display = "block"
+    }
+
+    
+});
+
+const handle = document.querySelector(".ply")
+
+handle.addEventListener("click", function () {
+    handle.classList.toggle("ply")
+})
+
+
 
 
 
@@ -71,6 +75,9 @@ naats.forEach(function (naat,index) {
 
          loadNaat(index)
          mainAudio.play()
+         if(mainAudio.played) {
+            playIcon.classList.add("fa-pause")
+    }
        
 
     });

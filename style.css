@@ -282,6 +282,7 @@ body {
 /* played */
 
 .played {
+  height: 300px;
   display: flex;
   gap: 10px;
   border: 1px solid black;
@@ -290,10 +291,10 @@ body {
   margin: 26px;
 }
 .played img {
-  width: 350px;
-  height: 230px;
-  border-radius: 30px;
-  padding: 25px;
+  width: 380px;
+  height: 240px;
+  border-radius: 0px;
+  padding: 80px 0 0 25px;
 }
 
 audio {
@@ -306,7 +307,7 @@ audio {
 }
 
 .naat-info{
-  width: 250px;
+  width: 350px;
   height: 45px;
   position: relative;
   left: -20px;
@@ -315,7 +316,7 @@ audio {
 .naat-info h1{
    color: white;
    font-family: 'Poppins', sans-serif;
-   font-size: 32px;
+   font-size: 25px;
 }
 
 .naat-info p {
@@ -327,20 +328,20 @@ audio {
 
 .progress-area {
   display: flex;
-  gap: 15px;
-  padding: 50px 0 8px 0;
+  gap: 10px;
+  padding: 50px 0 25px 0;
 
 }
 
 .progress-area span{
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 900;
 }
 
 #progress{
-   width: 490px;
-   height: 6px;
+   width: 600px;
+   height: 8px;
   border-radius: 30px;
   background: #1b2925;
   appearance: none;
@@ -355,8 +356,8 @@ audio {
 
       appearance: none;
 
-      width: 14px;
-      height: 14px;
+      width: 15px;
+      height: 15px;
 
       border-radius: 50%;
 
@@ -369,15 +370,19 @@ audio {
  .controls{
    display: flex;
    gap: 80px;
-   padding: 0 0 10px 100px;
+   padding: 0 0 10px 150px;
  }
 
  .controls .play-btn{
-   width: 60px;
-   height: 60px;
+   width: 65px;
+   height: 65px;
    border-radius: 50%;
    border: none;
    background: rgb(65, 228, 65);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
  }
 
  .controls #previous,#next{
@@ -394,8 +399,8 @@ audio {
 }
 
  #volume{
-   width: 490px;
-   height: 6px;
+   width: 600px;
+   height: 8px;
   border-radius: 30px;
   background: #1b2925;
   appearance: none;
@@ -405,6 +410,12 @@ audio {
    position: relative;
    top: -3px;
    left: 0px;
+}
+
+.volume-area span{
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
 }
 
   #volume::-webkit-slider-thumb {
